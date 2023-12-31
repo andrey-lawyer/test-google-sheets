@@ -37,13 +37,13 @@ npm install
 
 3. **Create a .env file** in the root directory with the following content:
 
-POSTGRES_HOST=your_postgres_host
-POSTGRES_PORT_DB=your_postgres_port
-POSTGRES_USER=your_postgres_user
-POSTGRES_PASSWORD=your_postgres_password
-POSTGRES_DB=your_postgres_db
-GOOGLE_API_KEY = your_google_api_key
-DOC_ID = google_table_id
+- POSTGRES_HOST=your_postgres_host
+- POSTGRES_PORT_DB=your_postgres_port
+- POSTGRES_USER=your_postgres_user
+- POSTGRES_PASSWORD=your_postgres_password
+- POSTGRES_DB=your_postgres_db
+- GOOGLE_API_KEY = your_google_api_key
+- DOC_ID = google_table_id
 
 ## Usage
 
@@ -65,12 +65,12 @@ This project is built using the following technologies:
 
 The project is structured as follows:
 
-src/config: Configuration files, including the database configuration.
-src/controllers: Express.js route controllers.
-src/entities: TypeORM entities representing database tables.
-src/middleware: Custom middleware functions.
-src/routes: Express.js route definitions.
-src/services: Business logic and external service interactions.
+- src/config: Configuration files, including the database configuration.
+- src/controllers: Express.js route controllers.
+- src/entities: TypeORM entities representing database tables.
+- src/middleware: Custom middleware functions.
+- src/routes: Express.js route definitions.
+- src/services: Business logic and external service interactions.
 
 ## Schema
 
