@@ -5,8 +5,7 @@ import Size from "../entities/Size";
 import Model from "../entities/Model";
 import fetchDataFromGoogleSheet from "../services/googlespreadsheet.service";
 
-// import Todo from "../entities/Todo";
-
+// Create a new DataSource instance for PostgreSQL
 export const PostgresDataSource = new DataSource({
   type: "postgres",
   host: process.env.POSTGRES_HOST,
@@ -18,15 +17,22 @@ export const PostgresDataSource = new DataSource({
   entities: [Product, Model, Size],
 });
 
+// Function to connect to the PostgreSQL database
 const connectDB = async () => {
   try {
+    // Initialize the DataSource and connect to the database
     await PostgresDataSource.initialize();
     console.log("Data Source has been initialized!");
+
+    // Fetch data from the Google Sheet on application startup
     fetchDataFromGoogleSheet();
+
+    // Set up an interval to fetch data from the Google Sheet every hour (3600000 milliseconds)
     setInterval(() => {
       fetchDataFromGoogleSheet();
     }, 3600000);
   } catch (err) {
+    // Handle errors during DataSource initialization
     console.error("Error during Data Source initialization", err);
   }
 };

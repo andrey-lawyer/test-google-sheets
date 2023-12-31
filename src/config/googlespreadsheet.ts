@@ -5,7 +5,7 @@ async function getSpreadsheet() {
     apiKey: process.env.GOOGLE_API_KEY!,
   });
   await doc.loadInfo();
-  console.log(doc.title);
+  console.log(`Access to the "${doc.title}" is open!`);
   return doc;
 }
 

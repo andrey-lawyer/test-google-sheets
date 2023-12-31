@@ -21,12 +21,6 @@ router.init();
 
 const port = app.get("port");
 
-// setInterval(() => {
-// fetchDataFromGoogleSheet();
-// }, 3600000);
-
-// fetchDataFromGoogleSheet();
-
 const server = app.listen(port, () =>
   console.log(`Server started on port ${port}`)
 );
