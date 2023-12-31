@@ -7,7 +7,12 @@ logs
 *.log
 npm-debug.log*
 
-.yarn и .pnp.js
+.yarn 
+.pnp.js
+yarn-error.log
+.npm 
+yarn.lock 
+package-lock.json.
 
 
 

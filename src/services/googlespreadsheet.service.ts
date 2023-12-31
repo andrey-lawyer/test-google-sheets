@@ -71,7 +71,7 @@ async function fetchDataFromGoogleSheet() {
 
           // If the size does not exist, create and save a new size
           if (!size) {
-            // If a new size, add it 
+            // If a new size, add it
             size = sizeRepository.create({
               size: sizeHeaders[i],
               available: sizeValue === "+",
@@ -88,7 +88,9 @@ async function fetchDataFromGoogleSheet() {
       }
     }
   } catch (err) {
-    console.log(err);
+    throw new Error(
+      `Data fetch failed, ${err instanceof Error ? err.message : ""}`
+    );
   }
 }
 
