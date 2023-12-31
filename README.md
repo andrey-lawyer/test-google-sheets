@@ -8,6 +8,7 @@
 - [Structure](#structure)
 - [Schema](#schema)
 - [Endpoints](#endpoints)
+- [Deployment](#deployment)
 
 ## Introduction
 
@@ -81,3 +82,9 @@ The database schema includes tables for Product, Size, Model. The relationships 
 - `GET /`: Retrieve all products.
 - `GET /:productId`: Retrieve a specific product by ID.
 - `PATCH /:productId`: Update the name of a specific product and optionally the category
+
+## Deployment
+
+The project is currently deployed on [Render](https://node-google-sheets2.onrender.com). The database is hosted using the capabilities of [Supabase](https://supabase.com).
+
+Feel free to check the live deployment and interact with the application.
