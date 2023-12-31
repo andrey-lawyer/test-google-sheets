@@ -79,9 +79,9 @@ The database schema includes tables for Product, Size, Model. The relationships 
 
 ## Endpoints
 
-- `GET /`: Retrieve all products.
-- `GET /:productId`: Retrieve a specific product by ID.
-- `PATCH /:productId`: Update the name of a specific product and optionally the category
+- `GET /products`: Retrieve all products.
+- `GET /products/:productId`: Retrieve a specific product by ID.
+- `PATCH /products/:productId`: Update the name of a specific product and optionally the category
 
 ## Deployment
 
